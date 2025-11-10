@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Us | VESTURE</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      /* CONTACT PAGE STYLES */
+      body {
+        background-color: #0d0d0d;
+        color: #f5f0e6;
+        font-family: "Poppins", sans-serif;
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
+      }
+
+      header {
+        background-color: #272624;
+        padding: 10px 60px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      .logo {
+        font-family: "Playfair Display", serif;
+        font-size: 1.8rem;
+        color: #f5f0e6;
+        text-decoration: none;
+        font-weight: 700;
+      }
+
+      nav a {
+        text-decoration: none;
+        color: #f5f0e6;
+        font-weight: 600;
+        margin-left: 25px;
+        transition: color 0.3s ease;
+      }
+
+      nav a:hover,
+      nav a.active {
+        color: #d8c3a5;
+      }
+
+      /* CONTACT SECTION */
+      .contact-section {
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 100px 60px;
+        text-align: center;
+      }
+
+      .contact-section h2 {
+        font-size: 3rem;
+        font-family: "Playfair Display", serif;
+        color: #f5f0e6;
+        margin-bottom: 10px;
+      }
+
+      .contact-section p {
+        color: #d8c3a5;
+        font-size: 1.1rem;
+        max-width: 700px;
+        margin-bottom: 50px;
+      }
+
+      /* CONTACT FORM BOX */
+      form {
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+        width: 100%;
+        max-width: 500px;
+        background: rgba(245, 240, 230, 0.05);
+        padding: 40px;
+        border: 1px solid rgba(245, 240, 230, 0.15);
+        border-radius: 16px;
+        box-shadow: 0 0 25px rgba(0, 0, 0, 0.35);
+        position: relative;
+        animation: glowPulse 4s ease-in-out infinite;
+      }
+
+      /* Glowing border animation */
+      @keyframes glowPulse {
+        0% {
+          box-shadow: 0 0 15px rgba(245, 240, 230, 0.1),
+            0 0 30px rgba(245, 240, 230, 0.05);
+        }
+        50% {
+          box-shadow: 0 0 25px rgba(245, 240, 230, 0.25),
+            0 0 60px rgba(245, 240, 230, 0.15);
+        }
+        100% {
+          box-shadow: 0 0 15px rgba(245, 240, 230, 0.1),
+            0 0 30px rgba(245, 240, 230, 0.05);
+        }
+      }
+
+      input,
+      textarea {
+        background: transparent;
+        border: none;
+        border-bottom: 2px solid rgba(245, 240, 230, 0.25);
+        color: #f5f0e6;
+        font-size: 1rem;
+        padding: 10px;
+        font-family: "Poppins", sans-serif;
+        transition: all 0.3s ease;
+      }
+
+      input:focus,
+      textarea:focus {
+        border-color: #d8c3a5;
+        outline: none;
+      }
+
+      textarea {
+        min-height: 120px;
+        resize: vertical;
+      }
+
+      button {
+        align-self: center;
+        background: transparent;
+        border: 2px solid #f5f0e6;
+        color: #f5f0e6;
+        font-size: 1.1rem;
+        padding: 10px 40px;
+        border-radius: 50px;
+        cursor: pointer;
+        transition: all 0.3s ease;
+      }
+
+      button:hover {
+        background: #f5f0e6;
+        color: #0d0d0d;
+        box-shadow: 0 0 15px #f5f0e6;
+      }
+
+      /* CONTACT INFO BELOW FORM */
+      .contact-info {
+        margin-top: 80px;
+        text-align: center;
+        color: #d8c3a5;
+      }
+
+      .contact-info p {
+        margin: 8px 0;
+        font-size: 1rem;
+      }
+
+      footer {
+        background-color: #272624;
+        color: #f5f0e6;
+        text-align: center;
+        padding: 20px;
+        font-size: 0.9rem;
+      }
+    </style>
+  </head>
+
+  <body>
+  <header>
+    <div class="logo">
+      <img src="images/mini.jpg" alt="Vesture Logo" />
+      <h1>VESTURE</h1>
+    </div>
+    <nav>
+      <a href="index.html#explore-section">Explore</a>
+      <a href="about.html">About Us</a>
+      <a href="contact.html">Contact Us</a>
+      <a href="working.html">Working</a>
+      <div class="search-container">
+        <input type="text" placeholder="Search..." />
+      </div>
+      <div class="profile-icon">👤</div>
+    </nav>
+  </header>
+
+    <section class="contact-section">
+      <h2>Get in Touch</h2>
+      <p>
+        We'd love to hear from you! Whether you're a designer looking to
+        collaborate, a customer with feedback, or someone curious about our
+        services, reach out below.
+      </p>
+
+      <form>
+        <input type="text" placeholder="Your Name" required />
+        <input type="email" placeholder="Your Email" required />
+        <textarea placeholder="Your Message" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+
+      <div class="contact-info">
+        <p>📍 Location: In Yalls Hearts <3</p>
+        <p>📞 Phone: +91 143-999 666</p>
+        <p>✉️ Email: vesture@gmail.com</p>
+      </div>
+    </section>
+
+    <footer>
+      <p>© 2025 VESTURE. All Rights Reserved.</p>
+    </footer>
+  </body>
+</html>

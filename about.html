@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About Us | VESTURE</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      /* ABOUT PAGE STYLES */
+      body {
+        background-color: #0d0d0d;
+        color: #f5f0e6;
+        font-family: "Poppins", sans-serif;
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
+      }
+
+      header {
+        background-color: #272624;
+        padding: 10px 60px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      .logo {
+        font-family: "Playfair Display", serif;
+        font-size: 1.8rem;
+        color: #f5f0e6;
+        text-decoration: none;
+        font-weight: 700;
+      }
+
+      nav a {
+        text-decoration: none;
+        color: #f5f0e6;
+        font-weight: 600;
+        margin-left: 25px;
+        transition: color 0.3s ease;
+      }
+
+      nav a:hover,
+      nav a.active {
+        color: #d8c3a5;
+      }
+
+      /* Section Styling */
+      .about-section {
+        padding: 100px 60px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: left;
+        gap: 100px;
+      }
+
+      .subheading {
+        font-size: 2.5rem;
+        color: #f5f0e6;
+        text-align: center;
+        margin-bottom: 60px;
+        font-family: "Playfair Display", serif;
+      }
+
+      .about-content {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        max-width: 1200px;
+      }
+
+      .about-content.left {
+        justify-content: flex-start;
+      }
+
+      .about-content.right {
+        justify-content: flex-end;
+      }
+
+      .text-block {
+        background: rgba(245, 240, 230, 0.05);
+        border: 1px solid rgba(245, 240, 230, 0.15);
+        border-radius: 16px;
+        padding: 40px;
+        width: 480px;
+        box-shadow: 0 0 30px rgba(245, 240, 230, 0.1);
+        transition: transform 0.4s ease, box-shadow 0.4s ease;
+      }
+
+      .text-block:hover {
+        transform: scale(1.03);
+        box-shadow: 0 0 25px rgba(245, 240, 230, 0.4);
+      }
+
+      .text-block h3 {
+        font-size: 1.5rem;
+        color: #d8c3a5;
+        margin-bottom: 10px;
+      }
+
+      .text-block h4 {
+        font-size: 1.2rem;
+        margin-bottom: 20px;
+        color: #f5f0e6;
+      }
+
+      .text-block p {
+        font-size: 1rem;
+        color: #d8c3a5;
+        line-height: 1.7;
+      }
+
+      /* Second Page (Scroll Down Section) */
+      .section2 {
+        background-color: #141414;
+        padding: 100px 60px;
+      }
+
+      .benefits-section {
+        text-align: center;
+        margin-top: 80px;
+      }
+
+      .benefits-section h2 {
+        font-size: 2.2rem;
+        font-family: "Playfair Display", serif;
+        color: #f5f0e6;
+        margin-bottom: 40px;
+      }
+
+      .benefits-section ul {
+        list-style: none;
+        padding: 0;
+        font-size: 1.1rem;
+        line-height: 2;
+        color: #d8c3a5;
+      }
+
+      footer {
+        background-color: #272624;
+        color: #f5f0e6;
+        text-align: center;
+        padding: 20px;
+        font-size: 0.9rem;
+      }
+    </style>
+  </head>
+
+  <body>
+  <header>
+    <div class="logo">
+      <img src="images/mini.jpg" alt="Vesture Logo" />
+      <h1>VESTURE</h1>
+    </div>
+    <nav>
+      <a href="index.html#explore-section">Explore</a>
+      <a href="about.html">About Us</a>
+      <a href="contact.html">Contact Us</a>
+      <a href="working.html">Working</a>
+      <div class="search-container">
+        <input type="text" placeholder="Search..." />
+      </div>
+      <div class="profile-icon">👤</div>
+    </nav>
+  </header>
+
+    <!-- Page 1 -->
+    <section class="about-section section1">
+      <h2 class="subheading">The Problem in Today's Fashion World</h2>
+
+      <div class="about-content left">
+        <div class="text-block">
+          <h3>01</h3>
+          <h4>
+            People buy expensive clothes for one-time events (weddings, parties,
+            functions).
+          </h4>
+          <p>
+            At <strong>VESTURE</strong>, we believe fashion should be
+            sustainable. Our platform allows users to rent and share designer
+            pieces without the waste. Instead of spending thousands for a single
+            event, our curated rentals offer luxury experiences that are
+            affordable, stylish, and eco-conscious.
+          </p>
+        </div>
+      </div>
+
+      <div class="about-content right">
+        <div class="text-block">
+          <h3>02</h3>
+          <h4>
+            Wardrobes are full, but most outfits are rarely reused. Renting
+            designer or occasion wear is risky — damage, loss, and trust issues.
+          </h4>
+          <p>
+            We solve this with a <strong>secure rental system</strong>. Every
+            item is verified, insured, and quality-checked. Our transparent
+            process ensures both renters and owners feel safe — with digital
+            agreements, deposits, and reliable delivery.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Page 2 -->
+    <section class="about-section section2">
+      <div class="about-content left">
+        <div class="text-block">
+          <h3>03</h3>
+          <h4>
+            No affordable rental service that protects both the owner and renter.
+          </h4>
+          <p>
+            <strong>VESTURE</strong> bridges this gap with an ecosystem built on
+            trust and technology. Our pricing model benefits both sides —
+            owners earn passive income while renters enjoy designer wear without
+            breaking the bank. Style becomes accessible and responsible.
+          </p>
+        </div>
+      </div>
+
+      <div class="benefits-section">
+        <h2>Why Choose VESTURE?</h2>
+        <ul>
+          <li>✨ Access luxury fashion at a fraction of the cost.</li>
+          <li>🌍 Reduce waste and promote circular fashion.</li>
+          <li>🧵 Verified designer quality with seamless logistics.</li>
+          <li>🤝 Trust-driven platform with built-in protection.</li>
+          <li>💼 Empower owners to earn through their wardrobe.</li>
+        </ul>
+      </div>
+    </section>
+
+    <footer>
+      <p>© 2025 VESTURE. All Rights Reserved.</p>
+    </footer>
+  </body>
+</html>

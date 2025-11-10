@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>How Vesture Works | VESTURE</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      /* ====== GLOBAL ====== */
+      body {
+        background-color: #0d0d0d;
+        color: #f5f0e6;
+        font-family: "Poppins", sans-serif;
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
+      }
+
+      header {
+        background-color: #272624;
+        padding: 10px 60px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      .logo {
+        font-family: "Playfair Display", serif;
+        font-size: 1.8rem;
+        color: #f5f0e6;
+        text-decoration: none;
+        font-weight: 700;
+      }
+
+      nav a {
+        text-decoration: none;
+        color: #f5f0e6;
+        font-weight: 600;
+        margin-left: 25px;
+        transition: color 0.3s ease;
+      }
+
+      nav a:hover,
+      nav a.active {
+        color: #d8c3a5;
+      }
+
+      /* ====== WORKING SECTION ====== */
+      .working-section {
+        min-height: 100vh;
+        padding: 100px 60px;
+        text-align: center;
+      }
+
+      .working-section h2 {
+        font-size: 3rem;
+        font-family: "Playfair Display", serif;
+        margin-bottom: 60px;
+        color: #f5f0e6;
+      }
+
+      .steps-container {
+        display: flex;
+        justify-content: center;
+        align-items: stretch;
+        flex-wrap: wrap;
+        gap: 40px;
+        max-width: 1200px;
+        margin: 0 auto;
+      }
+
+      .step-box {
+        background: rgba(245, 240, 230, 0.05);
+        border: 1px solid rgba(245, 240, 230, 0.15);
+        border-radius: 16px;
+        width: 220px;
+        padding: 30px 20px;
+        text-align: center;
+        color: #f5f0e6;
+        box-shadow: 0 0 25px rgba(0, 0, 0, 0.35);
+        transition: all 0.4s ease;
+        animation: glowPulse 4s ease-in-out infinite;
+      }
+
+      @keyframes glowPulse {
+        0% {
+          box-shadow: 0 0 15px rgba(245, 240, 230, 0.1),
+            0 0 30px rgba(245, 240, 230, 0.05);
+        }
+        50% {
+          box-shadow: 0 0 25px rgba(245, 240, 230, 0.25),
+            0 0 60px rgba(245, 240, 230, 0.15);
+        }
+        100% {
+          box-shadow: 0 0 15px rgba(245, 240, 230, 0.1),
+            0 0 30px rgba(245, 240, 230, 0.05);
+        }
+      }
+
+      .step-box:hover {
+        transform: scale(1.05);
+        box-shadow: 0 0 35px rgba(245, 240, 230, 0.4);
+      }
+
+      .step-box i {
+        font-size: 2.5rem;
+        color: #d8c3a5;
+        margin-bottom: 15px;
+      }
+
+      .step-box h3 {
+        font-size: 1.3rem;
+        margin-bottom: 10px;
+        font-family: "Playfair Display", serif;
+      }
+
+      .step-box p {
+        font-size: 0.95rem;
+        color: #d8c3a5;
+        line-height: 1.5;
+      }
+
+      .arrow {
+        font-size: 1.5rem;
+        color: #d8c3a5;
+        align-self: center;
+      }
+
+      footer {
+        background-color: #272624;
+        color: #f5f0e6;
+        text-align: center;
+        padding: 20px;
+        font-size: 0.9rem;
+      }
+
+      @media (max-width: 900px) {
+        .steps-container {
+          flex-direction: column;
+          align-items: center;
+        }
+
+        .arrow {
+          display: none;
+        }
+      }
+    </style>
+
+    <script
+      src="https://kit.fontawesome.com/a2e0e9f6e1.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body>
+  <header>
+    <div class="logo">
+      <img src="images/mini.jpg" alt="Vesture Logo" />
+      <h1>VESTURE</h1>
+    </div>
+    <nav>
+      <a href="index.html#explore-section">Explore</a>
+      <a href="about.html">About Us</a>
+      <a href="contact.html">Contact Us</a>
+      <a href="working.html">Working</a>
+      <div class="search-container">
+        <input type="text" placeholder="Search..." />
+      </div>
+      <div class="profile-icon">👤</div>
+    </nav>
+  </header>
+
+    <section class="working-section">
+      <h2>How VESTURE Works</h2>
+
+      <div class="steps-container">
+        <div class="step-box">
+          <i class="fas fa-tag"></i>
+          <h3>List & Price</h3>
+          <p>
+            Owner or platform uploads item.<br />
+            Rental price + refundable deposit.
+          </p>
+        </div>
+
+        <div class="arrow">➜</div>
+
+        <div class="step-box">
+          <i class="fas fa-credit-card"></i>
+          <h3>Book & Pay</h3>
+          <p>
+            Renter pays rental + deposit.<br />
+            Payments via UPI / PG / Escrow.
+          </p>
+        </div>
+
+        <div class="arrow">➜</div>
+
+        <div class="step-box">
+          <i class="fas fa-truck"></i>
+          <h3>Delivery & Use</h3>
+          <p>
+            Courier or local pickup.<br />
+            Renter uses item during rental period.
+          </p>
+        </div>
+
+        <div class="arrow">➜</div>
+
+        <div class="step-box">
+          <i class="fas fa-search"></i>
+          <h3>Return & Inspect</h3>
+          <p>
+            Return by courier/in-person.<br />
+            Condition check with photos.
+          </p>
+        </div>
+
+        <div class="arrow">➜</div>
+
+        <div class="step-box">
+          <i class="fas fa-hand-holding-usd"></i>
+          <h3>Refund & Share</h3>
+          <p>
+            Refund deposit (if OK) or adjust for damages.<br />
+            Share and earn via add-ons.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <p>© 2025 VESTURE. All Rights Reserved.</p>
+    </footer>
+  </body>
+</html>
