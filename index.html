@@ -4,72 +4,76 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>VESTURE - Your wardrobe, reinvented.</title>
-  <link rel="stylesheet" href="css/style.css" />
+
+  <!-- ✅ Correct relative path for GitHub Pages -->
+  <link rel="stylesheet" href="./css/style.css" />
 </head>
+
 <body>
   <header>
     <div class="logo">
-      <img src="images/mini.jpg" alt="Vesture Logo" />
+      <!-- ✅ Fixed image path -->
+      <img src="./images/mini.jpg" alt="Vesture Logo" />
       <h1>VESTURE</h1>
     </div>
+
     <nav>
-      <a href="index.html#explore-section">Explore</a>
-      <a href="about.html">About Us</a>
-      <a href="contact.html">Contact Us</a>
-      <a href="working.html">Working</a>
+      <!-- ✅ All internal links use relative paths -->
+      <a href="./index.html#explore-section">Explore</a>
+      <a href="./about.html">About Us</a>
+      <a href="./contact.html">Contact Us</a>
+      <a href="./working.html">Working</a>
+
       <div class="search-container">
         <input type="text" placeholder="Search..." />
       </div>
+
       <div class="profile-icon">👤</div>
     </nav>
   </header>
 
-<section id="hero-video">
-  <video autoplay muted loop playsinline class="bg-video">
-    <source src="videos/vesture-runway.mp4" type="video/mp4" />
-    Your browser does not support the video tag.
-  </video>
+  <!-- ✅ Hero video section -->
+  <section id="hero-video">
+    <video autoplay muted loop playsinline class="bg-video">
+      <source src="./videos/vesture-runway.mp4" type="video/mp4" />
+      Your browser does not support the video tag.
+    </video>
 
-  <div class="overlay"></div>
+    <div class="overlay"></div>
 
-  <div class="hero-content">
-
-    <div class="hero-heading">
-      <h1>VESTURE</h1>
-      <p>Your wardrobe, reinvented.</p>
-    </div>
-  </div>
-
-  <!-- Added luxury line (centered, breathing glow, fading left→right) -->
-  <div class="hero-text">
-    <h1 class="luxury-text">Luxury for Everyone</h1>
-  </div>
-</section>
-
-
-
-  <section id="explore-section">
-    <div class="wheel-container">
-      <div class="wheel">
-<div class="wheel">
-  <div class="card"><img src="images/1.jpg" alt="Outfit 1"></div>
-  <div class="card"><img src="images/2.jpeg" alt="Outfit 2"></div>
-  <div class="card"><img src="images/3.jpeg" alt="Outfit 3"></div>
-  <div class="card"><img src="images/4.jpeg" alt="Outfit 4"></div>
-  <div class="card"><img src="images/5.jpeg" alt="Outfit 1"></div>
-  <div class="card"><img src="images/6.jpeg" alt="Outfit 2"></div>
-  <div class="card"><img src="images/7.jpeg" alt="Outfit 3"></div>
-  <div class="card"><img src="images/8.jpeg" alt="Outfit 4"></div>
-  <div class="card"><img src="images/13.jpeg" alt="Outfit 1"></div>
-  <div class="card"><img src="images/14.jpeg" alt="Outfit 2"></div>
-  <div class="card"><img src="images/11.jpeg" alt="Outfit 3"></div>
-  <div class="card"><img src="images/12.jpeg" alt="Outfit 4"></div>
-</div>
-
+    <div class="hero-content">
+      <div class="hero-heading">
+        <h1>VESTURE</h1>
+        <p>Your wardrobe, reinvented.</p>
       </div>
     </div>
 
-    <button class="catalog-btn" onclick="window.location.href='catalog.html'">
+    <!-- Luxury tagline -->
+    <div class="hero-text">
+      <h1 class="luxury-text">Luxury for Everyone</h1>
+    </div>
+  </section>
+
+  <!-- ✅ Explore section -->
+  <section id="explore-section">
+    <div class="wheel-container">
+      <div class="wheel">
+        <div class="card"><img src="./images/1.jpg" alt="Outfit 1"></div>
+        <div class="card"><img src="./images/2.jpg" alt="Outfit 2"></div>
+        <div class="card"><img src="./images/3.jpg" alt="Outfit 3"></div>
+        <div class="card"><img src="./images/4.jpg" alt="Outfit 4"></div>
+        <div class="card"><img src="./images/5.jpg" alt="Outfit 5"></div>
+        <div class="card"><img src="./images/6.jpg" alt="Outfit 6"></div>
+        <div class="card"><img src="./images/7.jpg" alt="Outfit 7"></div>
+        <div class="card"><img src="./images/8.jpg" alt="Outfit 8"></div>
+        <div class="card"><img src="./images/13.jpg" alt="Outfit 9"></div>
+        <div class="card"><img src="./images/14.jpg" alt="Outfit 10"></div>
+        <div class="card"><img src="./images/11.jpg" alt="Outfit 11"></div>
+        <div class="card"><img src="./images/12.jpg" alt="Outfit 12"></div>
+      </div>
+    </div>
+
+    <button class="catalog-btn" onclick="window.location.href='./catalog.html'">
       CATALOG
     </button>
   </section>
