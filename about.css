@@ -1,0 +1,122 @@
+/* about.css - replace existing file with this */
+
+/* Global & base */
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@400;600;700&display=swap");
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  background: #0d0d0d;
+  color: #f5f0e6;
+  overflow-x: hidden; /* prevents horizontal slider */
+}
+
+/* fixed header consistent with site */
+header { position: fixed; top: 0; left: 0; right: 0; z-index: 60; }
+.navbar {
+  display:flex; align-items:center; justify-content:space-between;
+  padding: 18px 60px; background:#111;
+}
+.logo { color:#f5f0e6; font-weight:700; letter-spacing:2px; font-size:1.1rem; }
+.nav-links { display:flex; gap:24px; margin:0; list-style:none; }
+.nav-links a { color:#f5f0e6; text-decoration:none; font-weight:500; }
+.nav-links a.active { color:#d8c3a5; }
+
+/* SECTION: reuse catalog rhythm */
+.section {
+  min-height: 100vh;                 /* same full-screen rhythm */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 120px 20px 80px;         /* space for fixed header + breathing room */
+  background: inherit;
+}
+
+/* center column to match catalog width */
+.central {
+  width: 100%;
+  max-width: 1200px;                /* same central column width as catalog */
+  margin: 0 auto;
+}
+
+/* subheading (matches catalog style) */
+.subheading {
+  text-align: center;
+  font-family: "Playfair Display", serif;
+  font-size: 2.4rem;
+  color: #f5e8c7;
+  margin: 0 0 40px;
+  letter-spacing: 0.5px;
+}
+
+/* Grid that places content in two columns inside central column */
+.about-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;    /* left / right columns inside centered area */
+  gap: 40px 80px;
+  align-items: start;
+}
+
+/* single about item (card-like) */
+.about-item {
+  max-width: 520px;
+  width: 100%;
+  background: rgba(245,240,230,0.03);
+  border: 1px solid rgba(245,240,230,0.06);
+  border-radius: 14px;
+  padding: 28px 32px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.55), 0 0 24px rgba(245,240,230,0.03) inset;
+  transition: transform .28s ease, box-shadow .28s ease;
+}
+
+/* mild lift on hover like catalog */
+.about-item:hover { transform: translateY(-6px); box-shadow: 0 18px 40px rgba(0,0,0,0.6); }
+
+/* numbered label */
+.about-item .num {
+  color: #d4b877;
+  font-weight:700;
+  font-size:1.4rem;
+  margin-bottom: 10px;
+}
+
+/* title + body */
+.about-item h4 {
+  margin: 0 0 12px;
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: #f5f0e6;
+}
+.about-item p {
+  margin: 0;
+  color: #d8c3a5;
+  line-height: 1.6;
+  font-size: 0.98rem;
+}
+
+/* RIGHT / LEFT placement helpers (zig-zag) */
+.about-item.left { justify-self: start; }
+.about-item.right { justify-self: end; }
+
+/* Benefits block (centered on second page) */
+.benefits {
+  margin-top: 48px;
+  background: transparent;
+  text-align: center;
+  color: #f5f0e6;
+}
+.benefits h3 { color:#f5e8c7; font-size:1.6rem; margin-bottom:16px; }
+.benefits ul { list-style:none; padding:0; margin:0 auto; max-width:700px; }
+.benefits li { color:#d8c3a5; margin:10px 0; font-size:1rem; }
+
+/* Ensure second page stacks nicely: we will reuse .section and .central */
+.section.second { padding-top: 100px; }
+
+/* RESPONSIVE: collapse to single column under 900px */
+@media (max-width: 900px) {
+  .about-grid { grid-template-columns: 1fr; gap: 24px; }
+  .about-item { justify-self: center !important; max-width: 92%; }
+  .section { padding: 100px 16px; }
+  .nav-links { gap: 16px; }
+}
